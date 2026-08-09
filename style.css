@@ -145,3 +145,7 @@ details {
   bottom: 10px;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
