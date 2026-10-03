@@ -1,4 +1,4 @@
- *{
+*{
   box-sizing: border-box;
 }
  
@@ -76,6 +76,14 @@ main p {
   color: var(--tinta);
 }
  
+main img {
+  display: block;
+  width: min(100%, 20rem);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 35%;
+}
+ 
 main a {
   color: #3F6275;
 }
@@ -143,23 +151,22 @@ button:focus-visible {
  
 .bio-content,
 .b-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: clamp(1rem, 4vw, 2.5rem);
 }
  
-.b-content img {
-  width: min(100%, 17.5rem);
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-}
- 
 .b-content label {
+  flex: 1 1 12rem;
+  align-self: center;
   color: #3F6275;
   font-style: italic;
   font-size: 0.9rem;
 }
  
-.b-text {
+.b-text,
+.bio-text {
   flex: 1 1 18rem;
   min-width: 0;
   font-size: 1rem;
@@ -172,6 +179,7 @@ button:focus-visible {
 }
  
 .obra-grid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
   gap: clamp(1rem, 3vw, 1.5625rem);
 }
@@ -188,6 +196,10 @@ button:focus-visible {
   transform: translateY(-3px);
 }
  
+.obra-card img {
+  width: 100%;
+}
+ 
 .caps {
   border-radius: var(--raio);
   transition: transform 0.3s;
@@ -201,12 +213,6 @@ button:focus-visible {
 }
  
 .loucura img {
-  display: block;
-  width: 100%;
-  max-width: 37.5rem;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
   margin: 0.75rem auto 1rem;
 }
  
@@ -234,6 +240,7 @@ button:focus-visible {
   height: auto;
   aspect-ratio: 11 / 6;
   object-fit: cover;
+  object-position: center;
   margin: 1.25rem auto;
 }
  
@@ -270,24 +277,23 @@ button:focus-visible {
     align-items: stretch;
   }
  
+  .bio-content img,
   .b-content img {
-    width: 100%;
-    max-width: 28rem;
     align-self: center;
   }
  
-  .b-text {
+  .b-text,
+  .bio-text {
     flex: none;
     width: 100%;
   }
  
   .b-text img {
-    display: block;
     margin-inline: auto;
   }
  
   .b-content label {
-    display: block;
+    flex: none;
     text-align: center;
     font-size: 0.875rem;
   }
