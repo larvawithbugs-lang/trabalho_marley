@@ -15,7 +15,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.25rem, 1rem + 1.5vw, 1.5rem);
-    color:	#B0E0E6;
+    color:#B0E0E6;
 }
 
 header {
