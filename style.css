@@ -72,6 +72,9 @@ footer {
   width: min(100%, 17.5rem);
   height: auto;
   aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
 }
 
 .bio-text,
@@ -177,6 +180,9 @@ footer {
     width: 100%;
     max-width: 28rem;
     align-self: center;
+   border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
   }
 
   .bio-text,
