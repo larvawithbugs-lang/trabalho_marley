@@ -33,10 +33,6 @@ main {
   font-size: 1rem;
 }
 
-main > *:not(.image) {
-  width: min(100% - 2 * var(--gutter), 80rem);
-  margin-inline: auto;
-}
 
 main p {
   margin-bottom: 1rem;
@@ -56,6 +52,7 @@ footer {
   gap: 0.25rem 1rem;
   padding: 0.75rem var(--gutter);
   margin-bottom: 0;
+  color: #4F94CD;
 }
 
 .nav-links a {
@@ -193,8 +190,3 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
-
-  #ref ul {
-    flex: none;
-  }
-}
