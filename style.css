@@ -1,7 +1,7 @@
 body {
   line-height: 1.6;
   overflow-wrap: break-word;
-  background-color:	#B0E0E6;
+  background-color:	#20B2AA;
 }
 
 img {
@@ -15,7 +15,7 @@ h1 {
 
 h2 {
   font-size: clamp(1.25rem, 1rem + 1.5vw, 1.5rem);
-    color: #EEDD82;
+    color:	#B0E0E6;
 }
 
 header {
