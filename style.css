@@ -1,7 +1,7 @@
 body {
   line-height: 1.6;
   overflow-wrap: break-word;
-  background-image: url(fundo.png);
+  background-color: #4682B4;
 }
 
 img {
@@ -21,6 +21,7 @@ header {
   padding: 0.5rem var(--gutter);
   justify-content: center;
   align-items: center;
+  background-image: url(fundo.jpg);
 }
 
 header h1 {
@@ -44,6 +45,7 @@ footer {
   padding: 0.75rem var(--gutter);
   justify-content: center;
   font-size: 0.9rem;
+  background-image: url(fundo.jpg);
 }
 
 .nav-links {
