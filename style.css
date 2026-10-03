@@ -69,7 +69,6 @@ footer {
   gap: clamp(1rem, 4vw, 2.5rem);
 }
 
-.bio-content img,
 .b-content img {
   width: min(100%, 17.5rem);
   height: auto;
@@ -79,7 +78,6 @@ footer {
   transition: transform 0.3s;
 }
 
-.bio-text,
 .b-text {
   flex: 1 1 18rem;
   min-width: 0;
@@ -107,6 +105,11 @@ footer {
   transition: transform 0.3s;
 }
 
+.caps{
+ border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
 .obra-card span {
   font-size: 0.8125rem;
 }
@@ -122,22 +125,6 @@ footer {
    border-radius: 10px;
   padding: 20px;
   transition: transform 0.3s;
-}
-
-#ref {
-  padding: 1rem 1.25rem;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-#ref ul {
-  padding-left: 1.25rem;
-  flex: 1 1 15rem;
-  min-width: 0;
-}
-
-#ref li {
-  overflow-wrap: anywhere;
 }
 
 .butao {
@@ -180,7 +167,6 @@ footer {
     align-items: stretch;
   }
 
-  .bio-content img,
   .b-content img {
     width: 100%;
     max-width: 28rem;
@@ -190,7 +176,6 @@ footer {
   transition: transform 0.3s;
   }
 
-  .bio-text,
   .b-text {
     flex: none;
     width: 100%;
